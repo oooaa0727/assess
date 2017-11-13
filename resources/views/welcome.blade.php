@@ -79,15 +79,14 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Laravel-Assess
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="{{ url('/welcome') }}">index</a>
+                    <a href="{{ url('/about') }}">about</a>
+                    <a href="{{ url('/assess') }}">assess</a>
+                    <a href="https://github.com/oooaa0727/assess">GitHub</a>
                 </div>
             </div>
         </div>
