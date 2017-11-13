@@ -20,3 +20,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 //關於商家
 Route::get('/about', 'AboutController@index')->name('about');
+//會員評價
+Route::get('/assess', 'AssessController@index')->name('assess');
