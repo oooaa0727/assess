@@ -15,6 +15,11 @@ class CreateAssessTable extends Migration
     {
         Schema::create('assess', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('user',20);
+            $table->unsignedInteger('store_id');
+            $table->unsignedInteger('score');
+            $table->text('comment',500);
+            $table->dateTime('date');
             $table->timestamps();
         });
     }
