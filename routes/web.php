@@ -18,3 +18,5 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+//關於商家
+Route::get('/about', 'AboutController@index')->name('about');
