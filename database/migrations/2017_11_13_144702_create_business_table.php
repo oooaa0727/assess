@@ -15,6 +15,12 @@ class CreateBusinessTable extends Migration
     {
         Schema::create('business', function (Blueprint $table) {
             $table->increments('id');
+            $table->unsignedInteger('store_id');
+            $table->string('store',50);
+            $table->text('introduction',500);
+            $table->string('location',100);
+            $table->string('type',10);
+            $table->float('score_avg');
             $table->timestamps();
         });
     }
