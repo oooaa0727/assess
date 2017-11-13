@@ -10,4 +10,8 @@ class Assess extends Model
     public function members(){
         return $this->belongsTo(Member::class);
     }
+    //店家
+    public function businesses(){
+        return $this->belongsTo(Business::class);
+    }
 }
