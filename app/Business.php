@@ -10,4 +10,10 @@ class Business extends Model
     public function assesses(){
         return $this->hasMany(Assess::class);
     }
+    /*
+    //查閱
+  public function members(){
+      return $this->belongsTo(Member::class);
+  }
+   */
 }

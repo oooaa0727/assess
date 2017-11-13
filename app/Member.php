@@ -11,5 +11,11 @@ class Member extends Model
         return $this->hasMany(Assess::class);
     }
 
+    /*
+      //店家
+    public function businesses(){
+        return $this->hasMany(Business::class);
+    }
+     */
 
 }
