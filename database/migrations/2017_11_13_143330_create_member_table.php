@@ -15,7 +15,11 @@ class CreateMemberTable extends Migration
     {
         Schema::create('member', function (Blueprint $table) {
             $table->increments('id');
-
+            $table->string('user',20);
+            $table->string('name',20);
+            $table->string('password',20);
+            $table->string('email',50);
+            $table->boolean('gender')->nullable();
             $table->timestamps();
         });
     }
